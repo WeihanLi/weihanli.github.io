@@ -1,0 +1,42 @@
+[
+        {
+            "skillName":"photoshop",
+            "skillScore":60
+        },
+        {
+            "skillName":"javascript",
+            "skillScore":80
+        },
+        {
+            "skillName":"div+css",
+            "skillScore":80
+        },
+        {
+            "skillName":"angularjs",
+            "skillScore":70
+        },
+        {
+            "skillName":"C#",
+            "skillScore":80
+        },
+        {
+            "skillName":"Java",
+            "skillScore":60
+        },
+        {
+            "skillName":"ASP.NET",
+            "skillScore":90
+        },
+        {
+            "skillName":"SQL Server",
+            "skillScore":60
+        },
+        {
+            "skillName":"git",
+            "skillScore":60
+        },
+        {
+            "skillName":"svn",
+            "skillScore":60
+        }
+]

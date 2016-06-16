@@ -14,9 +14,11 @@
         <!-- #warpper -->
         <div id="wrapper" ng-controller="CvCtrl">
             <!--top -->
+            <!--
             <header class="top">
                 <h1>WeihanLi </h1>
             </header>
+            -->
             <!--/top -->
             <!--  #sidebar -->
             <div id="sidebar">
@@ -56,6 +58,7 @@
                         Email:<address> <a href="mailto:ben121011@126.com" target="_blank">ben121011@126.com</a> </address><br/>
                         Github:<address><a href="https://github.com/weihanli" target="_blank">https://github.com/weihanli</a> </address> <br/>
                         OsChina:<address><a href="https://git.oschina.net/weihanli" target="_blank">https://git.oschina.net/weihanli</a> </address> <br/>
+                        Blog:<address><a href="http://www.cnblogs.com/ben121011" target="_blank">http://www.cnblogs.com/ben121011</a> </address> <br/>
                   </footer>
                   <!-- /#footer -->
             </div>
@@ -69,8 +72,7 @@
         <script src="js/angular.min.js"></script>
         <script type="text/javascript">
             // var navigation = responsiveNav("#nav", {customToggle: "#toggle"});
-            var app = angular.module("cv",[]);
-            app.controller("CvCtrl",function($scope){
+            angular.module("cv",[]).controller("CvCtrl",function($scope,$http){
                     $scope.item = "about";
                     //设置当前项 
                     $scope.setItem = function (item){
@@ -80,9 +82,19 @@
                     $scope.isSelected = function(item){
                         return item == $scope.item;
                     };
-            });        
-            
 
+                    //
+                    $scope.skills = null;
+                    //加载skills.json
+                    $http({
+                        method:'GET',
+                        url:'/data/skills.json'
+                    }).then(function(response){
+                        if(response.status==200){
+                            $scope.skills = response.data;
+                        }
+                    });
+            });                
         </script>
     </body>
 </html>
