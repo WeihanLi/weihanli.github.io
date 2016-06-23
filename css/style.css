@@ -1,17 +1,31 @@
 *{margin: 0;padding:0; }
 a{color:#000;text-decoration:none}a:active,a:hover{outline:0}
 .clear{clear: both;visibility: hidden;margin: 0;padding: 0}
-html,body{font-size: 1em;}
+html,body{font-size: 1em;line-height: 1.2em;}
+/* 顶部阴影效果 */
+body:before{
+    content: "";
+    position: fixed;
+    top: -1em;
+    left: 0;
+    width: 100%;
+    height: 1em;
+    -webkit-box-shadow: 0 0 1em rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 1em rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.8);
+    z-index: 10;
+}
 #nav{width: 100%;margin: 2em auto;padding: 0;}
 #nav ul{display:block;width:100%;list-style:none}
 #nav li{width:100%;display:block}
+
 #nav a{color:#000;font-weight:700;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-transition:background .3s ease;-moz-transition:background .3s ease;transition:background .3s ease;text-shadow:0 -1px rgba(0,0,0,.5);border-bottom:1px solid rgba(0,0,0,.2);border-top:1px solid rgba(255,255,255,.1);display:block;padding:.6em 2em;width:100%}
-#nav a:hover{background:rgba(255,255,255,.1)}
+
 #nav .active a{color:#fff;background:rgba(0,0,0,.6)}
 #nav li:first-child a{border-top:0}
-#nav li:last-child a{border-bottom:0} 
-#nav a:hover{background:transparent}
-#nav .active a:hover{color:#fff;background:rgba(0,0,0,.6)}
+#nav li:last-child a{border-bottom:0}
+#nav a:hover{background:rgba(0,0,0,.4)}; 
+#nav .active a:hover{color:#000;background:rgba(255,255,255,.6)}
 
 div{padding: 1%;}
 img{display: block;}
@@ -60,6 +74,7 @@ footer a:hover{
     line-height: 1.6em;
     font-weight: bolder;
     font-style: italic;
+    text-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
     width: 100%;
 }
 .title img{
@@ -89,6 +104,7 @@ footer a:hover{
     list-style-position: inside;
     list-style-type: decimal;
 }
+
 /*
 .projectList li{
     float: left;
@@ -110,6 +126,11 @@ footer a:hover{
     float: left;
     width: 10em;
     margin-left: 1em;
+}
+.skillList li:hover{
+    float: left;
+    width: 10em;
+    margin-left: 1.2em;
 }
 .progress{
     width:10em;
