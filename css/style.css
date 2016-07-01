@@ -15,12 +15,15 @@ body:before{
     box-shadow: 0 0 1em rgba(0, 0, 0, 0.8);
     z-index: 10;
 }
+ul{
+    display: block;
+    list-style: none;
+}
+/* nav */
 #nav{width: 100%;margin: 2em auto;padding: 0;}
 #nav ul{display:block;width:100%;list-style:none}
 #nav li{width:100%;display:block}
-
 #nav a{color:#000;font-weight:700;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-transition:background .3s ease;-moz-transition:background .3s ease;transition:background .3s ease;text-shadow:0 -1px rgba(0,0,0,.5);border-bottom:1px solid rgba(0,0,0,.2);border-top:1px solid rgba(255,255,255,.1);display:block;padding:.6em 2em;width:100%}
-
 #nav .active a{color:#fff;background:rgba(0,0,0,.6)}
 #nav li:first-child a{border-top:0}
 #nav li:last-child a{border-bottom:0}
@@ -83,10 +86,11 @@ footer a:hover{
     vertical-align:middle;
 }
 .subtitle{
-    font-size: 1.4em;
+    font-size: 1.2em;
     display: block;
     font-weight: bold;
     padding: 0.1em auto 0.3em;
+    line-height: 1.5em;
 }
 .box{
     float: left;
@@ -94,12 +98,19 @@ footer a:hover{
     font-style: italic;
     margin-top: 1em;
     text-align: center;
+    color: #fff;
     border-right :1px solid #666;
 }
 .box:nth-child(3n+2){
     border: none;
+    background: #D13438;
 }
-
+.box:nth-child(3n){
+    background: #107C10;
+}
+.box:nth-child(3n+1){
+    background: #0078D7;
+}
 .projectList{
     list-style-position: inside;
     list-style-type: decimal;
@@ -142,4 +153,9 @@ footer a:hover{
     height:100%;
     background-color:#e33434;
     display:block
+}
+
+.rateList li{
+    line-height: 1.2em;
+
 }
