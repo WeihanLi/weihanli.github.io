@@ -19,8 +19,11 @@ ul{
     display: block;
     list-style: none;
 }
+.cd-timeline-block h2{
+    line-height: 1.2em;
+}
 /* nav */
-#nav{width: 100%;margin: 2em auto;padding: 0;}
+#nav{width: 100%;margin: 1em auto;padding: 0;}
 #nav ul{display:block;width:100%;list-style:none}
 #nav li{width:100%;display:block}
 #nav a{color:#000;font-weight:700;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-transition:background .3s ease;-moz-transition:background .3s ease;transition:background .3s ease;text-shadow:0 -1px rgba(0,0,0,.5);border-bottom:1px solid rgba(0,0,0,.2);border-top:1px solid rgba(255,255,255,.1);display:block;padding:.6em 2em;width:100%}
@@ -30,8 +33,15 @@ ul{
 #nav a:hover{background:rgba(0,0,0,.4)}; 
 #nav .active a:hover{color:#000;background:rgba(255,255,255,.6)}
 
-div{padding: 1%;}
-img{display: block;}
+div{
+    padding: 0.4em;
+}
+.avatar{
+    display: block;
+    border-radius:50%;
+    width:8em;
+    margin:2em auto 0.4em
+}
 
 #wrapper{
     min-height: 100%;
@@ -49,16 +59,27 @@ header{
     margin: 2em auto 0;
     padding: 0 0.4em;
     position: relative;
-    bottom: 0;    
+    bottom: 0;
+    text-align: center;
 }
-footer a:hover{
-    font-weight: bold;
+#contact > address{
+    display: inline-block;
+}
+
+.social-icon{
+    width: 24px;
+    height:24px;
+    margin:2px;
+    display: inline;
+}
+footer .social-icon:hover{
+    width: 26px;
+
 }
 #sidebar{
     width: 20%;
     min-width: 16em;
     float: left;
-    /*background: #eee;*/
     padding-bottom: 0;
 }
 #topside{
@@ -69,12 +90,13 @@ footer a:hover{
 }
 #main{
     float: left;
+    padding-left: 0.8em;
     min-width: 10em;
     width: 76%;
 }
 .title{
-    font-size: 1.6em;
-    line-height: 1.6em;
+    font-size: 1.4em;
+    line-height: 1.4em;
     font-weight: bolder;
     font-style: italic;
     text-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
@@ -87,14 +109,16 @@ footer a:hover{
 }
 .subtitle{
     font-size: 1.2em;
+    margin-top: 0.4em;
     display: block;
     font-weight: bold;
     padding: 0.1em auto 0.3em;
-    line-height: 1.5em;
+    line-height: 1.3em;
 }
 .box{
     float: left;
-    width: 31%;
+    padding: 0.2em;
+    width: 33.3%;
     font-style: italic;
     margin-top: 1em;
     text-align: center;
@@ -111,18 +135,12 @@ footer a:hover{
 .box:nth-child(3n+1){
     background: #0078D7;
 }
+
 .projectList{
-    list-style-position: inside;
+    list-style-position: outside;
     list-style-type: decimal;
 }
 
-/*
-.projectList li{
-    float: left;
-    width: 14em;
-    margin-left: 1em;
-}
-*/
 .projectTitle{
     font-size: 1.2em;
     line-height: 1.2em;
@@ -157,5 +175,12 @@ footer a:hover{
 
 .rateList li{
     line-height: 1.2em;
+}
 
+/*mobile layout*/
+@media only screen and (max-width: 480px) {
+    #sidebar{
+        width: 100%;
+        margin: 1em auto;
+    }
 }

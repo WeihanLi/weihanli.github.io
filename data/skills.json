@@ -8,16 +8,20 @@
             "skillScore":80
         },
         {
+            "skillName":"jquery",
+            "skillScore":80
+        },
+        {
             "skillName":"html&css",
             "skillScore":80
         },
         {
             "skillName":"angularjs",
-            "skillScore":70
+            "skillScore":80
         },
         {
             "skillName":"C#",
-            "skillScore":80
+            "skillScore":90
         },
         {
             "skillName":"Java",
@@ -29,14 +33,14 @@
         },
         {
             "skillName":"SQL Server",
-            "skillScore":60
+            "skillScore":80
         },
         {
             "skillName":"git",
-            "skillScore":60
+            "skillScore":80
         },
         {
             "skillName":"svn",
-            "skillScore":60
+            "skillScore":70
         }
 ]

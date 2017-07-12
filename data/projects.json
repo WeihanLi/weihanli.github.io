@@ -1,0 +1,92 @@
+[
+    {
+        "projectTitle":"活动室预约系统",
+        "projectLink":"http://reservation.weihanli.xyz",
+        "projectDescription":"学校多个活动室，不同时间段的提前预约申请及处理，申请表的打印，通知公告，微信开发"
+    },
+    {
+        "projectTitle":"SparkTodo",
+        "projectLink":"https://github.com/WeihanLi/SparkTodo",
+        "projectDescription":"基于 .NET Core 的一个 WebApi 项目，使用 swagger 自动生成接口文档， 身份验证使用轻量级的 JsonWebToken 来验证"
+    },
+    {
+        "projectTitle":"MvcSimplePager",
+        "projectLink":"https://github.com/WeihanLi/MvcSimplePager",
+        "projectDescription":"针对asp.net mvc 和 asp.net core 设计的通用、扩展性良好的轻量级分页扩展"
+    },
+    {
+        "projectTitle":"EntityFramework.DbDescriptionHelper",
+        "projectLink":"https://github.com/WeihanLi/EntityFramework.DbDescriptionHelper",
+        "projectDescription":"EF生成数据库描述组件"
+    },
+    {
+        "projectTitle":"DbTool",
+        "projectLink":"https://github.com/WeihanLi/DbTool",
+        "projectDescription":"数据库工具，根据表结构文档生成创建表sql，根据数据库表信息导出Model和表结构文档"
+    },
+    {
+        "projectTitle":"AccessControlDemo",
+        "projectLink":"https://github.com/WeihanLi/AccessControlDemo",
+        "projectDescription":"ASP.NET MVC 权限控制插件，自定义权限控制策略"
+    },
+    {
+        "projectTitle":"StackExchange.Redis中文文档（翻译）",
+        "projectLink":"http://weihanli.xyz/StackExchange.Redis-docs-cn/",
+        "projectDescription":"StackExchange.Redis 是 Stackoverflow 开发的 Redis C# 客户端，是目前.net应用使用的最多的 redis 客户端，性能优越。翻译的StackExchange.Redis文档"
+    },
+    {
+        "projectTitle":"AccountingApp",
+        "projectLink":"https://github.com/WeihanLi/AccountingApp",
+        "projectDescription":"asp.net core开发的记账应用"
+    },
+    {
+        "projectTitle":"asp.net core 中文文档（翻译）",
+        "projectLink":"https://weihanli.gitbooks.io/asp-net-core-documentation/content/",
+        "projectDescription":"asp.net core 文档翻译"
+    },
+    {
+        "projectTitle":"河南理工大学明德网",
+        "projectLink":"http://218.196.240.149:8080",
+        "projectDescription":"党委宣传部 下的 宣传、 通知和公告发布等"
+    },
+    {
+        "projectTitle":"NewsCms",
+        "projectLink":"https://github.com/WeihanLi/NewsCMS",
+        "projectDescription":"基于对学校网站常用的功能总结而做的一个模板，其他网站可直接在这个基础上进行修改，基本功能：网页静态化，网页访问统计，文件的上传下载，富文本编辑器，codeMirro在线代码编辑器，站内搜索等"
+    },
+    {
+        "projectTitle":"私密空间",
+        "projectLink":"https://github.com/WeihanLi/PrivateSpaceDemo",
+        "projectDescription":"PrivateSpace私密空间，仿QQ空间功能，微信公共号开发"
+    },
+    {
+        "projectTitle":"人民艺术品展览网站",
+        "projectLink":"https://github.com/WeihanLi/ArtGallery",
+        "projectDescription":"响应式人民艺术品展览网站，艺术品图片上传，裁剪处理，生成缩略图等"
+    },
+    {
+        "projectTitle":"hpu新生宝典（WP手机应用）",
+        "projectLink":"https://www.microsoft.com/zh-cn/store/apps/hpu%E6%96%B0%E7%94%9F%E5%AE%9D%E5%85%B8/9wzdncrdhz6d",
+        "projectDescription":"河南理工大学新生手册WindowsPhone手机版，支持WP7，新生手册基本信息展示，摇一摇随机展示内容，自定义主题"
+    },
+    {
+        "projectTitle":"开心一哈",
+        "projectLink":"https://www.microsoft.com/zh-cn/store/p/JustLaugh/9nblggh3ddhm",
+        "projectDescription":"JUST LAUGH(WP应用)，开心一下，利用来福岛的笑话API作为内容源,不想看的时候可以语音播放"
+    },
+    {
+        "projectTitle":"mini-toast(原my-toast)",
+        "projectLink":"https://github.com/WeihanLi/mini_toast",
+        "projectDescription":"用 js 实现的一个仿微信通知消息的一个 toast通知效果，基于weui toast修改"
+    },
+    {
+        "projectTitle":"hpu新生宝典（WP手机应用）",
+        "projectLink":"https://www.microsoft.com/zh-cn/store/apps/hpu%E6%96%B0%E7%94%9F%E5%AE%9D%E5%85%B8/9wzdncrdhz6d",
+        "projectDescription":"河南理工大学新生手册WindowsPhone手机版，支持WP7，新生手册基本信息展示，摇一摇随机展示内容，自定义主题"
+    },
+    {
+        "projectTitle":"Odis",
+        "projectLink":"https://git.oschina.net/weihanli/odis",
+        "projectDescription":"Odis (angularjs+Cordova,Android)，零距离相机，图片处理合成主要分为两大模块：图片合成和虚拟影像，图片合成是将两张图片各取一半合成为一张图片，虚拟影像可以实现图片透明度的调整从而使得两张图片融洽的合为一体"
+    }
+]

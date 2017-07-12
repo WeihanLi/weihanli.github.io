@@ -8,110 +8,16 @@
     <!--.content -->
     <div class="content">
         <ul class="projectList">
-            <li>
+            <li ng-repeat="proj in projects">
                 <div class="projectItem">
-                    <div class="projectTitle"><a href="http://tw.hpu.edu.cn/activity" target="_blank">活动室预约系统</a></div>
-                    <div class="projectDesc">
-                        学校多个活动室，不同时间段的提前预约申请及处理，申请表的打印
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="projectItem">
-                    <div class="projectTitle"><a href="http://218.196.240.149:8080" target="_blank">河南理工大学明德网</a></div>
-                    <div class="projectDesc">
-                        党委宣传部 下的 宣传、 通知和公告发布等
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="projectItem">
-                    <div class="projectTitle"><a href="http://218.196.240.149/" target="_blank">河南理工大学体育馆网站</a> </div>
-                    <div class="projectDesc">
-                        河南理工大学体育馆网站,介绍河南理工大学体育馆概况，体育馆的一些通知公告发布等
-                    </div>
-                </div>
-                </li>
-            <li>
-                <div class="projectItem">
-                    <div class="projectTitle"><a href="https://github.com/WeihanLi/NewsCMS" target="_blank">NewsCms</a></div>
-                    <div class="projectDesc">
-                        基于对学校网站常用的功能总结而做的一个模板，其他网站可直接在这个基础上进行修改，基本功能：网页静态化，网页访问统计，文件的上传下载，富文本编辑器，codeMirro在线代码编辑器，站内搜索等                        
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="projectItem">
-                    <div class="projectTitle"><a href="https://github.com/WeihanLi/PrivateSpaceDemo" target="_blank">PrivateSpace私密空间</a> </div>
-                    <div class="projectDesc">
-                        PrivateSpace私密空间，特别版QQ空间,微信公共号开发。
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="projectItem">
-                    <div class="projectTitle"><a href="http://art.weihanli.xyz" target="_blank">人民艺术品展览网站</a></div>
-                    <div class="projectDesc">
-                        人民艺术品展览网站
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="projectItem">
-                    <div class="projectTitle"><a href="https://www.microsoft.com/zh-cn/store/apps/hpu%E6%96%B0%E7%94%9F%E5%AE%9D%E5%85%B8/9wzdncrdhz6d" target="_blank">hpu新生手册（WP手机应用）</a> </div>
-                    <div class="projectDesc">
-                        河南理工大学新生手册WindowsPhone手机版，支持WP7，基本信息展示
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="projectItem">
-                    <div class="projectTitle"><a href="https://www.microsoft.com/store/apps/9nblgggzk25n" target="_blank">LinkSettings（WP手机应用）</a> </div>
-                    <div class="projectDesc">
-                        快捷设置，为WP7用户设计的快捷设置网络，蓝牙以及飞行模式快捷设置
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="projectItem">
-                    <div class="projectTitle"><a href="https://www.microsoft.com/zh-cn/store/apps/%E5%BC%80%E5%BF%83%E4%B8%80%E5%93%88/9nblggh3ddhm" target="_blank"> JUST LAUGH(WP应用)</a></div>
-                    <div class="projectDesc">
-                        JUST LAUGH(WP应用)，开心一下，利用来福岛的笑话API作为内容源,不想看的时候可以语音播放
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="projectItem">
-                    <div class="projectTitle"><a href="https://github.com/WeihanLi/my_toast" target="_blank">my_toast(js插件)</a></div>
-                    <div class="projectDesc">
-                        my_toast(js插件)
-                        <p>
-                            移动端消息通知js插件，基于微信toast消息通知修改
-                        </p>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="projectItem">
-                    <div class="projectTitle">Odis (Cordova,Android)</div>
-                    <div class="projectDesc">
-                        Odis (Cordova,Android)，零距离相机，图片处理合成
-                        <p>
-                            主要分为两大模块：图片合成和虚拟影像，图片合成是将两张图片各取一半合成为一张图片，虚拟影像可以实现图片透明度的调整从而使得两张图片融洽的合为一体
-                        </p>
-                    </div>
-                </div>
-            </li>
-            <li>
-                 <div class="projectItem">
-                    <div class="projectTitle">人脸识别系统（UWP+ASP.NET MVC+Win10IoT）</div>
+                    <div class="projectTitle"><a href="{{proj.projectLink}}" target="_blank"> {{ proj.projectTitle }}</a></div>
                     <div class="projectDesc">
                         <p>
-                            人脸识别系统（UWP+ASP.NET MVC+Win10IoT），基于树莓派的人脸识别智能门禁系统设计，人员录入系统与人脸识别门禁系统是两个UWP应用，WEB部分使用的是ASP.NET MVC技术是对微软人脸识别部分的API进行封装以及将人员信息录入本地数据库，硬件电路使用树莓派来控制，树莓派装的是Win10IoT系统，控制GPIO引脚的电平从而实现门禁的控制，实际做的过程中硬件电路中的门禁使用的是一个二极管来代表门禁的状态
+                            {{ proj.projectDescription }}
                         </p>                       
                     </div>
                 </div>
-            </li>
+             </li>
         </ul>
     </div>
     <!--/.content -->

@@ -2,14 +2,13 @@
 <html ng-app="cv">
     <head>
         <meta charset="utf-8">
-        <title>WeihanLi's CV</title>
-         <meta name="author" content="WeihanLi">
-        <meta name="description" content="WeihanLi的个人简历">
+        <title>WeihanLi</title>
+        <meta name="author" content="WeihanLi">
+        <meta name="keyword" content="WeihanLi,liweihan,李卫涵,resume,cv,简历">
+        <meta name="description" content="WeihanLi's resume,李卫涵的个人简历,homepage">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
-        <!--<script type="text/javascript" src="js/responsive-nav.js"></script>
-       <link type="text/css" rel="stylesheet" href="css/responsive-nav.css"/>-->
-       <link type="text/css" rel="stylesheet" href="css/timeline.css"/>
+        <link type="text/css" rel="stylesheet" href="css/timeline.css"/>
         <link type="text/css" rel="stylesheet" href="css/style.css"/>
     </head>
     <body>
@@ -26,19 +25,19 @@
             <div id="sidebar">
                 <!--top section of the sidebar-->
                 <div id="topSide">
-                    <img src="images/avatar.jpg" style="border-radius:50%;width:6em;margin:2em auto 0.4em" alt="avator" /> 
-                    <h3 style="text-align:center"> DotNet,Developer,MSP</h3>
+                    <img class="avatar" src="images/avator.jpg" alt="avator" /> 
+                    <h4 style="text-align:center"> ASP.NET Web Full Stack Engineer</h3>
                     <div class="box">
-                        <span class="subtitle"> 22 </span>
+                        <span class="subtitle"> {{ currentYear - 1994 }} </span>
                         <span>Years <br/> Old</span>
                     </div>
                     <div class="box">
-                        <span class="subtitle">1+</span>
-                        <span>Years Experience</span>
+                        <span class="subtitle">{{ currentYear - 2015 }} +</span>
+                        <span>Years <br/> Experience</span>
                     </div>
                     <div class="box">
-                        <span class="subtitle">10+ </span> 
-                        <span>Projects Developed</span>
+                        <span class="subtitle">20 + </span> 
+                        <span>Projects <br/> Developed</span>
                     </div>
                     <div class="clear"></div>                     
                 </div>
@@ -48,7 +47,7 @@
                       <ul>
                           <li ng-class="{'active':isSelected('about')}" ng-click="setItem('about')"><a href="#about">About</a></li>
                           <li ng-class="{'active':isSelected('education')}" ng-click="setItem('education')"><a href="#education">Education</a></li>
-                          <li ng-class="{'active':isSelected('skill')}" ng-click="setItem('skill')"><a href="#skill">Skill</a></li>
+                          <li ng-class="{'active':isSelected('skills')}" ng-click="setItem('skills')"><a href="#skills">Skills</a></li>
                           <li ng-class="{'active':isSelected('projects')}" ng-click="setItem('projects')"><a href="#projects">Projects</a></li>
                           <!--<li><a href="#contact">Contact</a></li>-->
                       </ul>
@@ -56,11 +55,13 @@
                   <!--/#nav -->
                   <!-- #footer contact info -->
                   <footer id="contact">
-                        <address>Email: <a href="mailto:ben121011@126.com" target="_blank">ben121011@126.com</a> </address><br/>
-                        <address>Github:<a href="https://github.com/weihanli" target="_blank">https://github.com/weihanli</a> </address> <br/>
-                        <address>OsChina:<a href="https://git.oschina.net/weihanli" target="_blank">https://git.oschina.net/weihanli</a> </address> <br/>
-                        <address>Blog:<a href="http://www.cnblogs.com/weihanli" target="_blank">http://www.cnblogs.com/weihanli</a> </address> <br/>
-                        <address>Weibo:<a href="http://weibo.com/WeihanLee" target="_blank">http://weibo.com/WeihanLee</a> </address>
+                        <address><a href="mailto:weihanli@outlook.com" target="_blank"><img class="social-icon" src="https://outlook.live.com/owa/favicon.ico" alt="outlook"/></a></address>
+                        <address><a href="https://github.com/WeihanLi" target="_blank"><img class="social-icon" src="https://github.com/favicon.ico" alt="github"/></a></address>
+                        <address><a href="https://git.oschina.net/weihanli" target="_blank"><img class="social-icon" src="https://git.oschina.net/favicon.ico" alt="osChina"/></a> </address>
+                        <address><a href="https://www.gitbook.com/@weihanli" target="_blank"><img class="social-icon" src="https://www.gitbook.com/assets/images/logo/favicon.ico?version=19.6.16" alt="gitbook"/></a> </address>
+                        <address><a href="http://weihanli.cnblogs.com/" target="_blank"><img class="social-icon" src="./images/social_icons/cnblogs.ico" alt="cnblogs"/></a> </address>
+                        <address><a href="http://www.jianshu.com/u/9ea357af743b" target="_blank"><img class="social-icon" src="http://cdn2.jianshu.io/assets/favicons/favicon-783beb88ed621ceab614de960376ac0c.ico" alt="jianshu" /></a></address>
+                        <address><a href="http://weibo.com/WeihanLee" target="_blank"><img class="social-icon" src="http://weibo.com/favicon.ico" alt="cnblogs"/></a> </address>
                   </footer>
                   <!-- /#footer -->
             </div>
@@ -71,11 +72,24 @@
             <!-- /#main main content end -->
         </div>
         <!-- /#wrapper -->
-        <script src="js/angular.min.js"></script>
+        <script src="./js/angular.min.js"></script>
         <script type="text/javascript">
-            // var navigation = responsiveNav("#nav", {customToggle: "#toggle"});
+            function getRouteData(){
+                var url = location.href;
+                var array = url.split("#/");
+                if(array.length>1){
+                    var modules = ['about','education','projects','skill'];
+                    for(var i=0;i<modules.length;i++){
+                        if(modules[i] == array[1]){
+                            return array[1];
+                        }
+                    }
+                }
+                return "about";                
+            }
             angular.module("cv",[]).controller("CvCtrl",function($scope,$http){
-                    $scope.item = "about";
+                    $scope.currentYear = new Date().getFullYear();
+                    $scope.item = getRouteData();
                     //设置当前项 
                     $scope.setItem = function (item){
                         $scope.item = item;
@@ -85,15 +99,36 @@
                         return item == $scope.item;
                     };
 
-                    //
+                    // activities
+                    $scope.activities = null;
+                    $http({
+                        method:'GET',
+                        url:'/data/activities.json'
+                    }).then(function(response){
+                        if(response.status == 200){
+                            $scope.activities = response.data;
+                        }
+                    });
+
+                    // skills
                     $scope.skills = null;
-                    //load skills
                     $http({
                         method:'GET',
                         url:'/data/skills.json'
                     }).then(function(response){
-                        if(response.status==200){
+                        if(response.status == 200){
                             $scope.skills = response.data;
+                        }
+                    });
+                    
+                    // projects
+                    $scope.projects = null;                    
+                    $http({
+                        method:'GET',
+                        url:'/data/projects.json'
+                    }).then(function(response){
+                        if(response.status == 200){
+                            $scope.projects = response.data;
                         }
                     });
             });                

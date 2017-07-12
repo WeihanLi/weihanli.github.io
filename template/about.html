@@ -13,103 +13,38 @@
     <div class="content">        
         <span class="subtitle">Summary</span>
         <p>
-            会些前端的ASP.Net程序员，热爱互联网，热爱新技术 <br/>
-             熟练使用div+css,，javascript，jquery，ajax，angularjs<br/>
-             做过移动端开发，开发Android和WindowsPhone手机平台的应用
+            ASP.NET 全栈工程师，热爱互联网，热爱新技术 <br/>
+            熟练使用asp.net,div+css,，javascript，jquery，ajax，angularjs<br/>
+            熟练使用git,svn等代码版本管理工具，熟练使用Fiddler,Postman,ChromeDevelopTools等常用Web调试工具<br/>
+            有使用 asp.net core 项目经验<br/>
+            掌握常用的设计模式和编程思想，掌握SqlServer数据库常用调优方法<br/>
+            熟悉单元测试/测试代码覆盖率/持续集成/持续部署/日志异常监控
+        </p>
+        <p>
+            技术标签：
+            <ul>
+                <li>javascript</li>
+                <li>angularjs</li>
+                <li>java</li>
+                <li>csharp</li>
+                <li>python</li>
+                <li>git</li>
+                <li>svn</li>
+            </ul>
         </p>
         <span class="subtitle">Activities</span>
-        <section id="cd-timeline" class="cd-container">
-            <!--<div class="cd-timeline-block">
-                <div class="cd-timeline-img cd-picture">
-                    <img src="images/cd-icon-picture.svg" alt="Picture">
+        <section id="cd-timeline" class="cd-container">                        
+            <div class="cd-timeline-block" ng-repeat="obj in activities|orderBy:'activityDate'">
+                <div class="cd-timeline-img" ng-class="{'cd-picture':$even, 'cd-movie':$odd}">
+                    <img ng-if="$even" ng-src="images/cd-icon-picture.svg" alt="Picture">
+                    <img ng-if="$odd" ng-src="images/cd-icon-movie.svg" alt="Picture">
                 </div>
-
                 <div class="cd-timeline-content">
-                    <h2>进入大学</h2>
+                    <h2>{{ obj.activityTitle }}</h2>
                     <p>
-                        经过高考的洗礼，我来到了河南理工大学来读大学
-                    </p>                
-                    <span class="cd-date">2012-09-16</span>
-                </div>
-            </div>-->
-            <div class="cd-timeline-block">
-                <div class="cd-timeline-img cd-movie">
-                    <img src="images/cd-icon-movie.svg" alt="Picture">
-                </div>
-
-                <div class="cd-timeline-content">
-                    <h2>大学生网络工作室</h2>
-                    <p>
-                        经过努力，有幸进入到大学生网络工作室程序组，接触了程序组第一次培训，开始第一次接触微软技术C#。
+                        {{ obj.activityDescription }}
                     </p>
-                    <span class="cd-date">2013-01-15</span>
-                </div>
-            </div>
-            <div class="cd-timeline-block">
-                <div class="cd-timeline-img cd-picture">
-                    <img src="images/cd-icon-picture.svg" alt="Picture">
-                </div>
-
-                <div class="cd-timeline-content">
-                    <h2>暑期集训</h2>
-                    <p>
-                        大一暑假开始集中培训,学长给我们做培训，SQLServer数据库基本操作以及ADO.NET连接数据库，ASP.NET基本控件的使用，小型信息系统的开发，暑期结束之后基本可以独立做一个简单小型的图书管理系统。
-                        暑期除了程序组的培训还有文案组、设计组和动画组，和设计组一起学习了一些ps的操作，和文案组学习了一些word排版和ppt的制作，和动画组学习了简单视频处理绘声绘影的简单操作。
-                    </p>
-                    <span class="cd-date">2013-07-15</span>
-                </div>
-            </div>
-            <!--<div class="cd-timeline-block">
-                <div class="cd-timeline-img cd-movie">
-                    <img src="images/cd-icon-picture.svg" alt="Picture"/>
-                </div>
-
-                <div class="cd-timeline-content">
-                    <h2>寒假提高以及为给大一培训做准备</h2>
-                    <p>
-                        自己看视频学习的同时给大一的准备一些培训demo和资料，学习WP开发
-                    </p>
-                    <span class="cd-date">2014-01-18</span>
-                </div>
-            </div>-->
-            <div class="cd-timeline-block">
-                <div class="cd-timeline-img cd-movie">
-                    <img src="images/cd-icon-movie.svg" alt="Picture"/>
-                </div>
-
-                <div class="cd-timeline-content">
-                    <h2>暑假培训和新生手册WP版开发</h2>
-                    <p>
-                        大二暑假给大一的培训，C#面向对象，数据库操作和ASP.NET常用控件使用等。
-                        培训结束之后开发wp版的新生手册，7月底第一版开发完成，并在8月20号左右更新了第二版的新生手册，增加了自定义主题背景和摇一摇随机呈现内容的功能
-                    </p>
-                    <span class="cd-date">2014-07-15</span>
-                </div>
-            </div>
-            <div class="cd-timeline-block">
-                <div class="cd-timeline-img cd-picture">
-                    <img src="images/cd-icon-picture.svg" alt="Picture"/>
-                </div>
-                <div class="cd-timeline-content">
-                    <h2>MSP（Microsoft Student Partner）</h2>
-                    <p>
-                        MSP（Microsoft Student Partners）是微软公司针对高校大学生在全球范围内所设立的项目。旨在鼓励那些在校园里积极倡导、推动创新实践，乐于积极帮助他人的优秀学生，给他们提供微软最前沿的技术资源，以及更广泛的交流、展示自我的平台。<br/>
-                        偶尔在微软的MSDN网站上看到MSP的介绍和招募信息，自己暑假刚开发了一个WP应用，想试一试于是发了一份申请表，等了一段时间收到来自北京的电话面试，之后成为了MSP的一员。
-                    </p>
-                    <span class="cd-date">2014-11-10</span>
-                </div>
-            </div>
-            <div class="cd-timeline-block">
-                <div class="cd-timeline-img cd-movie">
-                    <img src="images/cd-icon-movie.svg" alt="Picture"/>
-                </div>
-                <div class="cd-timeline-content">
-                    <h2>河南日昇昌网络科技有限公司</h2>
-                    <p>
-                        大三暑假到郑州实习，负责后台开发，产品属于互联网金融，主要使用JAVA开发，支付接口使用的是盛付通支付。<br/>
-                        时间从2015年7月中旬到2016年3月底。
-                    </p>
-                    <span class="cd-date">2015-07-15</span>
+                    <span class="cd-date">{{ obj.activityDate }}</span>
                 </div>
             </div>
         </section>
