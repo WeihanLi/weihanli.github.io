@@ -34,7 +34,7 @@ ul{
 #nav .active a:hover{color:#000;background:rgba(255,255,255,.6)}
 
 div{
-    padding: 0.4em;
+    padding: 1%;
 }
 .avatar{
     display: block;
@@ -74,11 +74,9 @@ header{
 }
 footer .social-icon:hover{
     width: 26px;
-
 }
 #sidebar{
-    width: 20%;
-    min-width: 16em;
+    width: 22%;
     float: left;
     padding-bottom: 0;
 }
@@ -91,7 +89,6 @@ footer .social-icon:hover{
 #main{
     float: left;
     padding-left: 0.8em;
-    min-width: 10em;
     width: 76%;
 }
 .title{
@@ -180,11 +177,41 @@ footer .social-icon:hover{
 .rateList li{
     line-height: 1.2em;
 }
-
+@media only screen and (max-width:1280px){
+    #sidebar{
+        width: 30%;
+        min-width: 300px;
+    }
+    #main{
+        width: 66%;
+        min-width: 100px;
+    }
+}
+@media only screen and (max-width:882px){
+    #sidebar{
+        width: 48%;
+        min-width: 300px;
+    }
+    #main{
+        width: 48%;
+    }
+}
+@media only screen and (max-width:576px){
+    #sidebar{
+        width: 60%;
+        min-width: 300px;
+    }
+    #main{
+        width: 36%;
+    }
+}
 /*mobile layout*/
 @media only screen and (max-width: 480px) {
     #sidebar{
         width: 100%;
         margin: 1em auto;
+    }
+    #main{
+        width: 100%;
     }
 }
