@@ -137,11 +137,10 @@ footer .social-icon:hover{
     list-style-position: outside;
     list-style-type: decimal;
 }
-
-.techTag li{
-    float: left;
-    margin-right: 1em;
-}
+ 
+.techTag ul{
+    list-style-type: disc;
+} 
 .projectTitle{
     font-size: 1.2em;
     line-height: 1.2em;
