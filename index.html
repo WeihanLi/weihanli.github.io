@@ -9,12 +9,11 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
-        <link type="text/css" rel="stylesheet" href="css/timeline.css"/>
         <link type="text/css" rel="stylesheet" href="css/style.css"/>
     </head>
     <body>
         <!-- #warpper -->
-        <div id="wrapper" ng-controller="CvCtrl">
+        <div id="wrapper" ng-controller="CvCtrl" class="ng-cloak">
             <!--top -->
             <!--
             <header class="top">
@@ -56,13 +55,9 @@
                   <!--/#nav -->
                   <!-- #footer contact info -->
                   <footer id="contact">
-                        <address><a href="mailto:weihanli@outlook.com" target="_blank"><img class="social-icon" src="https://outlook.live.com/owa/favicon.ico" alt="outlook"/></a></address>
-                        <address><a href="https://github.com/WeihanLi" target="_blank"><img class="social-icon" src="https://github.com/favicon.ico" alt="github"/></a></address>
-                        <address><a href="https://git.oschina.net/weihanli" target="_blank"><img class="social-icon" src="https://git.oschina.net/favicon.ico" alt="osChina"/></a> </address>
-                        <address><a href="https://www.gitbook.com/@weihanli" target="_blank"><img class="social-icon" src="https://www.gitbook.com/assets/images/logo/favicon.ico?version=19.6.16" alt="gitbook"/></a> </address>
-                        <address><a href="http://weihanli.cnblogs.com/" target="_blank"><img class="social-icon" src="./images/social_icons/cnblogs.ico" alt="cnblogs"/></a> </address>
-                        <address><a href="http://www.jianshu.com/u/9ea357af743b" target="_blank"><img class="social-icon" src="http://cdn2.jianshu.io/assets/favicons/favicon-783beb88ed621ceab614de960376ac0c.ico" alt="jianshu" /></a></address>
-                        <address><a href="http://weibo.com/WeihanLee" target="_blank"><img class="social-icon" src="http://weibo.com/favicon.ico" alt="cnblogs"/></a> </address>
+                        <address ng-repeat="item in socialLinks">
+                            <a ng-href="{{item.linkUrl}}" target="_blank"><img class="social-icon" ng-src="{{item.iconPath}}" alt="{{item.title}}"/></a>
+                        </address>
                   </footer>
                   <!-- /#footer -->
             </div>
