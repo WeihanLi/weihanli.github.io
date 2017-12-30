@@ -1,9 +1,8 @@
 var gulp = require('gulp');
+var concat = require("gulp-concat");
 var less = require('gulp-less');
 var cssmin = require("gulp-cssmin");
-var rename = require('gulp-rename');
 var uglify = require("gulp-uglify");
-var concat = require("gulp-concat");
 
 var paths = {
     lesspath:'./less/**.less',
@@ -14,7 +13,6 @@ var paths = {
     destcsspath:'./dest/style.min.css',
     destjspath:'./dest/app.min.js'
 };
-
 //less
 gulp.task('less', function () {
     gulp.src(paths.lesspath)
@@ -30,4 +28,5 @@ gulp.task('min:js',function(){
         .pipe(uglify())
         .pipe(gulp.dest("."))
 });
+// default
 gulp.task('default', ['less','min:js']);
