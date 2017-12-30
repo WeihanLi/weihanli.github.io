@@ -9,7 +9,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
-        <link type="text/css" rel="stylesheet" href="css/style.css"/>
+        <link type="text/css" rel="stylesheet" href="./dest/style.min.css"/>
     </head>
     <body>
         <!-- #warpper -->
@@ -49,7 +49,6 @@
                           <li ng-class="{'active':isSelected('education')}" ng-click="setItem('education')"><a href="#education">Education</a></li>
                           <li ng-class="{'active':isSelected('skills')}" ng-click="setItem('skills')"><a href="#skills">Skills</a></li>
                           <li ng-class="{'active':isSelected('projects')}" ng-click="setItem('projects')"><a href="#projects">Projects</a></li>
-                          <!--<li><a href="#contact">Contact</a></li>-->
                       </ul>
                   </div>
                   <!--/#nav -->
@@ -68,7 +67,7 @@
             <!-- /#main main content end -->
         </div>
         <!-- /#wrapper -->
-        <script src="./js/angular.min.js"></script>
-        <script type="text/javascript" src="./js/app.js"></script>
+        <script src="./libs/angular.min.js"></script>
+        <script src="./dest/app.min.js"></script>
     </body>
 </html>
