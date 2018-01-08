@@ -1,6 +1,6 @@
 {
-  "dependencies": {
-    "dependency": "^0.0.1",
+  "devDependencies": {
+    "@types/angular": "^1.6.40",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-cssmin": "^0.2.0",
