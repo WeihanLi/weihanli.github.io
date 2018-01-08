@@ -6,7 +6,7 @@ angular.module("cv", [])
     }])
     .controller("CvCtrl", ["$scope", function ($scope) {
         //
-        $scope.getRouteData = function () {
+        this.getRouteData = function () {
             var url = location.href;
             var array = url.split("#/");
             if (array.length > 1) {
@@ -20,14 +20,31 @@ angular.module("cv", [])
             return "about";
         };
         $scope.currentYear = new Date().getFullYear();
-        $scope.item = $scope.getRouteData();
+        $scope.item = this.getRouteData();
         //设置当前项
         $scope.setItem = function (item) {
             $scope.item = item;
         };
         $scope.isSelected = function (item) {
-            return item == $scope.item;
+            return item === $scope.item;
         };
+        $scope.navLinks = [{
+                title: "about",
+                desc: "About"
+            },
+            {
+                title: "education",
+                desc: "Education"
+            },
+            {
+                title: "skills",
+                desc: "Skills"
+            },
+            {
+                title: "Projects",
+                desc: "Projects"
+            }
+        ];
         $scope.socialLinks = [{
                 "title": "outlook",
                 "iconPath": "./images/social_icons/outlook.ico",
@@ -234,23 +251,4 @@ angular.module("cv", [])
                 "projectDescription": "Odis (angularjs+Cordova,Android)，零距离相机，图片处理合成主要分为两大模块：图片合成和虚拟影像，图片合成是将两张图片各取一半合成为一张图片，虚拟影像可以实现图片透明度的调整从而使得两张图片融洽的合为一体"
             }
         ];
-    }])
-// .directive('myEducation', function () {
-//     return {
-//         restrict: 'E',
-//         templateUrl: '../template/education.html'
-//     };
-// })
-// .directive('myProjects', function () {
-//     return {
-//         restrict: 'E',
-//         templateUrl: '../template/projects.html'
-//     };
-// })
-// .directive('mySkills', function () {
-//     return {
-//         restrict: 'E',
-//         templateUrl: '../template/skills.html'
-//     };
-// })
-;
+    }]);
