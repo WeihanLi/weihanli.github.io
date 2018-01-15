@@ -1,8 +1,15 @@
 {
   "name": "weihanli.github.io",
+  "repository": {
+    "url": "https://github.com/WeihanLi/weihanli.github.io",
+    "type": "git"
+  },
+  "author": "WeihanLi",
+  "license": "MIT",
+  "private":true,
   "scripts": {
-    "prestart": "npm install",
     "postinstall": "gulp",
+    "prestart": "yarn install",
     "start": "http-server ./ -a localhost -p 12344"
   },
   "devDependencies": {

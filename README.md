@@ -18,13 +18,14 @@ WeihanLi's personal homepage
 #### Node.js and Tools
 
 - Get [Node.js](https://nodejs.org/)
+- Install [Yarn](https://yarnpkg.com/en/docs/install)
 
 ### Running the Application
 
+``` bash
+
+yarn run start
+
 ```
 
-npm start
-
-```
-
-Navigate your browser to http://localhost:12344/ to see the application running.
+Navigate your browser to <http://localhost:12344/> to see the application running.
