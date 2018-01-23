@@ -9,9 +9,9 @@ var paths = {
     cssdir:'./css/',
     csspath: './css/**.css',
     jspath: './js/**.js',
-    destdir:'./dest/',
-    destcsspath:'./dest/style.min.css',
-    destjspath:'./dest/app.min.js'
+    destdir:'./dist/',
+    destcsspath:'./dist/style.min.css',
+    destjspath:'./dist/app.min.js'
 };
 //less
 gulp.task('less', function () {
