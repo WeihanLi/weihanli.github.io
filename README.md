@@ -1,5 +1,7 @@
 # weihanli.xyz
 
+[![Build Status](https://travis-ci.org/WeihanLi/weihanli.github.io.svg?branch=master)](https://travis-ci.org/WeihanLi/weihanli.github.io)
+
 ## Intro
 
 WeihanLi's personal homepage
