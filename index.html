@@ -30,12 +30,12 @@
                 <img class="avatar" src="images/avator.jpg" alt="avator" />
                 <h4 style="text-align:center"> ASP.NET Web Full Stack Engineer</h3>
                     <div class="box">
-                        <span class="subtitle"> {{ currentYear - 1994 }} </span>
+                        <span class="subtitle" ng-bind="currentYear - 1994"></span>
                         <span>Years
                             <br/> Old</span>
                     </div>
                     <div class="box">
-                        <span class="subtitle">{{ currentYear - 2015 }} +</span>
+                        <span class="subtitle" ng-bind="currentYear - 2015"></span>
                         <span>Years
                             <br/> Experience</span>
                     </div>
@@ -51,7 +51,7 @@
             <div id="nav">
                 <ul>
                     <li ng-repeat="item in navLinks" ng-class="{'active':isSelected(item.title)}" ng-click="setItem(item.title)">
-                        <a href="{{'#'+item.title}}">{{item.desc}}</a>
+                        <a href="{{'#'+item.title}}" ng-bind="item.desc"></a>
                     </li>
                 </ul>
             </div>

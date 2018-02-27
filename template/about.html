@@ -28,11 +28,10 @@
                     <img ng-if="$odd" ng-src="images/cd-icon-movie.svg" alt="Picture">
                 </div>
                 <div class="cd-timeline-content">
-                    <h2>{{ obj.activityTitle }}</h2>
-                    <p>
-                        {{ obj.activityDescription }}
+                    <h2 ng-bind="obj.activityTitle "></h2>
+                    <p ng-bind="obj.activityDescription">
                     </p>
-                    <span class="cd-date">{{ obj.activityDate }}</span>
+                    <span class="cd-date" ng-bind="obj.activityDate"></span>
                 </div>
             </div>
         </section>

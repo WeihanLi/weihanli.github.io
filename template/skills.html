@@ -9,7 +9,7 @@
     <div class="content">
         <ul class="skillList">
             <li ng-repeat="obj in skills|orderBy :'skillScore':true">
-                <span class="subtitle">{{ obj.skillName }}</span> 
+                <span class="subtitle" ng-bind="obj.skillName"></span> 
                 <div class="progress">
                     <span style="width:{{obj.skillScore}}%;"></span>
                 </div>
