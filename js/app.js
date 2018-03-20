@@ -8,7 +8,7 @@ angular.module("cv", [])
         //
         this.getRouteData = function () {
             var url = location.href;
-            var array = url.split("#/");
+            var array = url.split("!#");
             if (array.length > 1) {
                 var modules = ['about', 'education', 'projects', 'skills'];
                 for (var i = 0; i < modules.length; i++) {
