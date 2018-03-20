@@ -41,7 +41,7 @@ angular.module("cv", [])
                 desc: "Skills"
             },
             {
-                title: "Projects",
+                title: "projects",
                 desc: "Projects"
             }
         ];
