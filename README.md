@@ -1,33 +1,21 @@
-# weihanli.xyz
+# weihanli.github.io
 
-[![Build Status](https://travis-ci.org/WeihanLi/weihanli.github.io.svg?branch=master)](https://travis-ci.org/WeihanLi/weihanli.github.io)
+> weihanli.github.io
 
-## Intro
-
-WeihanLi's personal homepage
-
-<https://weihanli.xyz> is a static file website with html,css,javascript&angularjs.
-
-## Development
-
-### Prerequisites
-
-#### Git
-
-- A good place to learn about setting up git is [here](https://help.github.com/articles/set-up-git).
-- You can find documentation and download git [here](https://git-scm.com/).
-
-#### Node.js and Tools
-
-- Get [Node.js](https://nodejs.org/)
-- Install [Yarn](https://yarnpkg.com/en/docs/install)
-
-### Running the Application
+## Build Setup
 
 ``` bash
+# install dependencies
+npm install
 
-yarn run start
+# serve with hot reload at localhost:8080
+npm run dev
 
+# build for production with minification
+npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
 ```
 
-Navigate your browser to <http://localhost:12344/> to see the application running.
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

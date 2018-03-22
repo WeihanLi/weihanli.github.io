@@ -1,4 +1,5 @@
-<!--#skill -->
+<template>
+  <!--#skill -->
 <div id="skill">
     <!--.title -->
     <div class="title">
@@ -8,10 +9,10 @@
     <!--.content -->
     <div class="content">
         <ul class="skillList">
-            <li ng-repeat="obj in skills|orderBy :'skillScore':true">
-                <span class="subtitle" ng-bind="obj.skillName"></span> 
+            <li v-for="obj in skills" v-bind:key="obj.skillName">
+                <span class="subtitle">{{obj.skillName}}</span>
                 <div class="progress">
-                    <span style="width:{{obj.skillScore}}%;"></span>
+                    <span v-bind:style="{width:obj.skillScore+'%'}"></span>
                 </div>
              </li>
         </ul>
@@ -124,5 +125,60 @@
         </div>
     </div>
     <!--/.content -->
-</div> 
+</div>
 <!--/#skill -->
+</template>
+<script>
+export default {
+  data(){
+      return {
+          skills: [{
+                "skillName": "photoshop",
+                "skillScore": 60
+            },
+            {
+                "skillName": "javascript",
+                "skillScore": 80
+            },
+            {
+                "skillName": "jquery",
+                "skillScore": 80
+            },
+            {
+                "skillName": "html&css",
+                "skillScore": 80
+            },
+            {
+                "skillName": "angularjs",
+                "skillScore": 80
+            },
+            {
+                "skillName": "C#",
+                "skillScore": 90
+            },
+            {
+                "skillName": "Java",
+                "skillScore": 60
+            },
+            {
+                "skillName": "ASP.NET",
+                "skillScore": 90
+            },
+            {
+                "skillName": "SQL Server",
+                "skillScore": 80
+            },
+            {
+                "skillName": "git",
+                "skillScore": 80
+            },
+            {
+                "skillName": "svn",
+                "skillScore": 70
+            }
+        ]
+      };
+  }
+}
+</script>
+

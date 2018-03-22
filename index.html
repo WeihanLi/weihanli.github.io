@@ -1,80 +1,17 @@
 <!DOCTYPE html>
-<html ng-app="cv" ng-strict-di>
+<html>
 
 <head>
-    <meta charset="utf-8">
-    <title>WeihanLi</title>
-    <meta name="author" content="WeihanLi">
-    <meta name="keyword" content="WeihanLi,liweihan,homepage,resume,cv,李卫涵,简历,个人主页">
-    <meta name="description" content="WeihanLi's resume,李卫涵的个人简历,homepage,李卫涵的个人主页">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-    <link type="text/css" rel="stylesheet" href="./dist/style.min.css" />
+  <meta charset="utf-8">
+  <meta name="author" content="WeihanLi">
+  <meta name="keyword" content="WeihanLi,liweihan,homepage,resume,cv,李卫涵,简历,个人主页">
+  <meta name="description" content="WeihanLi's resume,李卫涵的个人简历,homepage,李卫涵的个人主页">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>weihanli</title>
 </head>
 
 <body>
-    <!-- #warpper -->
-    <div id="wrapper" ng-controller="CvCtrl" ng-cloak>
-        <!--top -->
-        <!--
-            <header class="top">
-                <h1>WeihanLi </h1>
-            </header>
-            -->
-        <!--/top -->
-        <!--  #sidebar -->
-        <div id="sidebar">
-            <!--top section of the sidebar-->
-            <div id="topSide">
-                <img class="avatar" src="images/avator.jpg" alt="avator" />
-                <h4 style="text-align:center"> ASP.NET Web Full Stack Engineer</h3>
-                    <div class="box">
-                        <span class="subtitle" ng-bind="currentYear - 1994"></span>
-                        <span>Years
-                            <br/> Old</span>
-                    </div>
-                    <div class="box">
-                        <span class="subtitle" ng-bind="currentYear - 2015"></span>
-                        <span>Years
-                            <br/> Experience</span>
-                    </div>
-                    <div class="box">
-                        <span class="subtitle">20 + </span>
-                        <span>Projects
-                            <br/> Developed</span>
-                    </div>
-                    <div class="clear"></div>
-            </div>
-            <!-- /#topside  -->
-            <!-- #nav -->
-            <div id="nav">
-                <ul>
-                    <li ng-repeat="item in navLinks" ng-class="{'active':isSelected(item.title)}" ng-click="setItem(item.title)">
-                        <a href="{{'#'+item.title}}" ng-bind="item.desc"></a>
-                    </li>
-                </ul>
-            </div>
-            <!--/#nav -->
-            <!-- #footer contact info -->
-            <footer id="contact">
-                <address ng-repeat="item in socialLinks">
-                    <a ng-href="{{item.linkUrl}}" target="_blank">
-                        <img class="social-icon" ng-src="{{item.iconPath}}" alt="{{item.title}}" />
-                    </a>
-                </address>
-            </footer>
-            <!-- /#footer -->
-        </div>
-        <!-- /#sidebar -->
-        <!--#main -->
-        <div id="main" ng-include="'./template/'+item+'.html'">
-        </div>
-        <!-- /#main main content end -->
-    </div>
-    <!-- /#wrapper -->
-    <script src="./libs/angular.min.js"></script>
-    <script src="./dist/app.min.js"></script>
+  <div id="wrapper"></div>
 </body>
 
 </html>

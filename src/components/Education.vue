@@ -1,4 +1,5 @@
-<!--#education -->
+<template>
+  <!--#education -->
 <div id="education">
     <!--.title -->
     <div class="title">
@@ -34,3 +35,4 @@
     <!--/.content -->
 </div>
 <!--/#education -->    
+</template>
