@@ -1,0 +1,9 @@
+  <!-- #footer contact info -->
+  <footer id="contact">
+    <address *ngFor="let item of socialLinks">
+        <a href="{{item.linkUrl}}" target="_blank">
+            <img class="social-icon" src="{{item.iconPath}}" alt="{{item.title}}" />
+        </a>
+    </address>
+</footer>
+<!-- /#footer -->

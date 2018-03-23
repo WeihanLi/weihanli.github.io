@@ -1,0 +1,123 @@
+/* nav */
+#nav{width: 100%;margin: 1em auto;padding: 0;}
+#nav ul{display:block;width:100%;list-style:none}
+#nav li{width:100%;display:block}
+#nav a{color:#000;font-weight:700;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-transition:background .3s ease;-moz-transition:background .3s ease;transition:background .3s ease;text-shadow:0 -1px rgba(0,0,0,.5);border-bottom:1px solid rgba(0,0,0,.2);border-top:1px solid rgba(255,255,255,.1);display:block;padding:.6em 2em;width:100%}
+#nav .active a{color:#fff;background:rgba(0,0,0,.6)}
+#nav li:first-child a{border-top:0}
+#nav li:last-child a{border-bottom:0}
+#nav a:hover{background:rgba(0,0,0,.4)};
+#nav .active a:hover{color:#000;background:rgba(207, 207, 207, 0.8)}
+
+.avatar{
+    display: block;
+    border-radius:50%;
+    width:8em;
+    margin:2em auto 0.4em
+}
+#wrapper{
+    min-height: 100%;
+    padding: 0;
+    width: 100%;
+}
+header{
+    width: 100%;
+    text-align: center;
+    background: #333;
+    color: #ccc;
+}
+#contact{
+    width: 100%;
+    margin: 2em auto 0;
+    padding: 0 0.4em;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+}
+#contact > address{
+    display: inline-block;
+}
+
+.social-icon{
+    margin:2px;
+    width: 32px;
+    display: inline;
+}
+footer .social-icon:hover{
+    width: 28px;
+}
+#sidebar{
+    width: 22%;
+    float: left;
+    padding-bottom: 0;
+}
+#topside{
+    text-align: center;
+    width: 100%;
+    height: auto;
+    min-height: 6em;
+}
+#main{
+    float: left;
+    padding-left: 0.8em;
+    width: 74%;
+}
+.box{
+    float: left;
+    padding: 0.1rem;
+    width: 31.4%;
+    font-style: italic;
+    margin-top: 1em;
+    text-align: center;
+    color: #fff;
+    border-right :1px solid #666;
+}
+.box:nth-child(3n+2){
+    border: none;
+    background: #D13438;
+}
+.box:nth-child(3n){
+    background: #107C10;
+}
+.box:nth-child(3n+1){
+    background: #0078D7;
+}
+
+@media only screen and (max-width:1280px){
+    #sidebar{
+        width: 30%;
+        min-width: 300px;
+    }
+    #main{
+        width: 64%;
+        min-width: 100px;
+    }
+}
+@media only screen and (max-width:882px){
+    #sidebar{
+        width: 48%;
+        min-width: 300px;
+    }
+    #main{
+        width: 48%;
+    }
+}
+@media only screen and (max-width:576px){
+    #sidebar{
+        width: 60%;
+        min-width: 300px;
+    }
+    #main{
+        width: 36%;
+    }
+}
+/*mobile layout*/
+@media only screen and (max-width: 480px) {
+    #sidebar{
+        width: 100%;
+        margin: 1em auto;
+    }
+    #main{
+        width: 100%;
+    }
+}

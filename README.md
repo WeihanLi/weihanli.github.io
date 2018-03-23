@@ -1,33 +1,27 @@
-# weihanli.xyz
+# Home
 
-[![Build Status](https://travis-ci.org/WeihanLi/weihanli.github.io.svg?branch=master)](https://travis-ci.org/WeihanLi/weihanli.github.io)
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
-## Intro
+## Development server
 
-WeihanLi's personal homepage
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-<https://weihanli.xyz> is a static file website with html,css,javascript&angularjs.
+## Code scaffolding
 
-## Development
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-### Prerequisites
+## Build
 
-#### Git
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-- A good place to learn about setting up git is [here](https://help.github.com/articles/set-up-git).
-- You can find documentation and download git [here](https://git-scm.com/).
+## Running unit tests
 
-#### Node.js and Tools
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-- Get [Node.js](https://nodejs.org/)
-- Install [Yarn](https://yarnpkg.com/en/docs/install)
+## Running end-to-end tests
 
-### Running the Application
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-``` bash
+## Further help
 
-yarn run start
-
-```
-
-Navigate your browser to <http://localhost:12344/> to see the application running.
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

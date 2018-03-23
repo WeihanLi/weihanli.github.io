@@ -1,0 +1,128 @@
+<!--#skill -->
+<div id="skill">
+  <!--.title -->
+  <div class="title">
+    Skills
+  </div>
+  <!--/.title -->
+  <!--.content -->
+  <div class="content">
+    <ul class="skillList">
+      <li *ngFor="let obj of skills">
+        <span class="subtitle">{{obj.skillName}}</span>
+        <div class="progress">
+          <span [ngStyle]="{'width':obj.skillScore+'%'}"></span>
+        </div>
+      </li>
+    </ul>
+    <div style="clear:both"></div>
+    <div style="padding-top:0.5m;">
+      <span class="subtitle" style="line-height:1.1em;font-size:1.1em"> 技术标签：</span>
+      <div class="techTag">
+        <h4>前端</h4>
+        <ul>
+          <li>Angularjs</li>
+          <li>layer</li>
+          <li>jquery</li>
+          <li>Less</li>
+          <li>Gulp</li>
+        </ul>
+        <h4>后端开发</h4>
+        <ul>
+          <li>
+            <p>ProgrammingLanguage 编程语言</p>
+            <ol>
+              <li>C#</li>
+              <li>Java</li>
+              <li>Python</li>
+            </ol>
+          </li>
+          <li>
+            <p>Database 数据库</p>
+            <ol>
+              <li>SqlServer</li>
+              <li>mySql</li>
+            </ol>
+          </li>
+          <li>
+            <p>Log 日志</p>
+            <ol>
+              <li>log4net</li>
+              <li>exceptionless</li>
+              <li>sentry</li>
+            </ol>
+          </li>
+          <li>
+            <p>Schedule 定时任务</p>
+            <ol>
+              <li>Quartz.NET</li>
+            </ol>
+          </li>
+          <li>
+            <p>MessageQueue 消息队列</p>
+            <ol>
+              <li>Redis</li>
+              <li>RabbitMQ</li>
+            </ol>
+          </li>
+          <li>
+            <p>Cache 缓存</p>
+            <ol>
+              <li>Redis</li>
+            </ol>
+          </li>
+          <li>
+            <p>Swagger 接口文档及调试</p>
+          </li>
+          <li>
+            <p>UnitTest 单元测试</p>
+            <ol>
+              <li>MsTest</li>
+              <li>XUnit</li>
+              <li>Moq</li>
+            </ol>
+          </li>
+          <li>
+            <p>IOC framework</p>
+            <ol>
+              <li>AutoFac</li>
+            </ol>
+          </li>
+          <li>
+            <p>CI/CD 持续集成/持续部署</p>
+            <ol>
+              <li>Travis</li>
+              <li>AppVeyor</li>
+            </ol>
+          </li>
+        </ul>
+        <h4>
+          <a id="user-content-tool--skills" class="anchor" href="#tool--skills" aria-hidden="true">
+            <span aria-hidden="true" class="octicon octicon-link"></span>
+          </a>Tool &amp; Skills</h4>
+        <ul>
+          <li>
+            <p>WebDevelopmentDebugTool Web开发调试工具</p>
+            <ol>
+              <li>Fiddler</li>
+              <li>Postman</li>
+              <li>GoogleDeveloperTools</li>
+            </ol>
+          </li>
+          <li>
+            <p>VersionControlSystem 代码版本控制系统</p>
+            <ol>
+              <li>git</li>
+              <li>svn</li>
+            </ol>
+          </li>
+        </ul>
+        <span>
+          <a style="color:blue" href="https://github.com/WeihanLi/WeihanLi.Profile/blob/master/TechStack.md" target="_blank">more...</a>
+        </span>
+      </div>
+    </div>
+  </div>
+  <!--/.content -->
+</div>
+<!--/#skill -->

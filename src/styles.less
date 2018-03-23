@@ -1,0 +1,52 @@
+/* You can add global styles to this file, and also import other style files */
+*{margin: 0;padding:0; }
+a{color:#000;text-decoration:none}a:active,a:hover{outline:0}
+.clear{clear: both;visibility: hidden;margin: 0;padding: 0}
+html,body{font-size: 1em;line-height: 1.2em;}
+/* 顶部阴影效果 */
+body:before{
+    content: "";
+    position: fixed;
+    top: -1em;
+    left: 0;
+    width: 100%;
+    height: 1em;
+    -webkit-box-shadow: 0 0 1em rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 1em rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.8);
+    z-index: 10;
+}
+
+ul{
+    display: block;
+    list-style: none;
+}
+
+.clear{
+  clear: both;
+}
+
+div{
+  padding: 1%;
+}
+
+.title{
+  font-size: 1.4em;
+  line-height: 1.4em;
+  font-weight: bolder;
+  font-style: italic;
+  text-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+.title img{
+  display: inline;
+  vertical-align:middle;
+}
+.subtitle{
+  font-size: 1.2em;
+  margin-top: 0.4em;
+  display: block;
+  font-weight: bold;
+  padding: 0.1em auto 0.3em;
+  line-height: 1.3em;
+}

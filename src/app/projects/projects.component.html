@@ -1,0 +1,23 @@
+ <!--#projects -->
+ <div id="projects">
+  <!--.title -->
+  <div class="title">
+      Projects
+  </div>
+  <!--/.title -->
+  <!--.content -->
+  <div class="content">
+      <ul class="projectList">
+          <li *ngFor="let proj of projects">
+              <div class="projectItem">
+                  <div class="projectTitle"><a [href]="proj.projectLink" target="_blank">{{proj.projectTitle}}</a></div>
+                  <div class="projectDesc">
+                      <p>{{proj.projectDescription}}</p>
+                  </div>
+              </div>
+           </li>
+      </ul>
+  </div>
+  <!--/.content -->
+</div>
+<!--/#projects -->
