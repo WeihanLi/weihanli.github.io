@@ -28,7 +28,7 @@
       <!-- #nav -->
       <div id="nav">
         <ul>
-          <li v-for="item in navLinks" v-bind:key="item.title" v-bind:class="{'active':item==item.title}" v-on:click="setItem(item.title)">
+          <li v-for="item in navLinks" v-bind:key="item.title" v-bind:class="{'active':isSelected(item.title)}" v-on:click="setItem(item.title)">
             <router-link v-bind:to="item.title">{{item.desc}}</router-link>
           </li>
         </ul>
