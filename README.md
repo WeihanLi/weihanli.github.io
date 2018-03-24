@@ -1,33 +1,13 @@
 # weihanli.xyz
 
-[![Build Status](https://travis-ci.org/WeihanLi/weihanli.github.io.svg?branch=master)](https://travis-ci.org/WeihanLi/weihanli.github.io)
-
 ## Intro
 
-WeihanLi's personal homepage
+个人主页前端实践，之前是基于 angularjs 做的，现在增加了基于 vue 和 angular 版的
 
-<https://weihanli.xyz> is a static file website with html,css,javascript&angularjs.
+1. [angularjs](https://github.com/WeihanLi/weihanli.github.io/tree/angularjs)
+1. [angular](https://github.com/WeihanLi/weihanli.github.io/tree/angular)
+1. [vue](https://github.com/WeihanLi/weihanli.github.io/tree/vue)
 
-## Development
+## Contact
 
-### Prerequisites
-
-#### Git
-
-- A good place to learn about setting up git is [here](https://help.github.com/articles/set-up-git).
-- You can find documentation and download git [here](https://git-scm.com/).
-
-#### Node.js and Tools
-
-- Get [Node.js](https://nodejs.org/)
-- Install [Yarn](https://yarnpkg.com/en/docs/install)
-
-### Running the Application
-
-``` bash
-
-yarn run start
-
-```
-
-Navigate your browser to <http://localhost:12344/> to see the application running.
+Contact me: <weihanli@outlook.com>
