@@ -10,6 +10,7 @@ export class AppComponent {
   currentYear: number;
   current: string;
   title = 'WeihanLi';
+  routeArray = ['about', 'education', 'skills', 'projects'];
   navLinks = [
     {
       title: 'about',
@@ -67,8 +68,20 @@ export class AppComponent {
   ];
 
   constructor() {
-    this.current = location.pathname.length > 1 ? location.pathname.substring(1) : 'about';
+    this.current = this.getRouteData();
     this.currentYear = new Date().getFullYear();
+  }
+
+  getRouteData(): string {
+    if (location.pathname.length > 1) {
+      const val = location.pathname.substring(1);
+      for (let i = 0; i < this.routeArray.length; i++) {
+        if (val === this.routeArray[i]) {
+          return val;
+        }
+      }
+    }
+    return 'about';
   }
 
   setItem(item): void {
