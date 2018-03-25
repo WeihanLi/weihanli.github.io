@@ -18,7 +18,7 @@
         </ul>
         <div class="clear"></div>
         <div style="padding-top:1em;">
-            <span style="line-height:1.1em;font-size:1.1em"> 技术标签：</span>
+            <span class="subtitle"> 技术标签：</span>
             <div class="techTag">
                 <h4><a id="user-content-frontend-前端" class="anchor" href="#frontend-%E5%89%8D%E7%AB%AF" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>FrontEnd
                     前端</h4>

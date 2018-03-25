@@ -14,7 +14,7 @@
             <span>学历：本科</span><br/>
             <span>时间：2012年9月 -- 2016年6月</span>
         </p>
-        <br/><br/>
+        <br/>
         <span class="subtitle">英语能力</span>
         <p>
             <ul class="rateList">
@@ -34,5 +34,5 @@
     </div>
     <!--/.content -->
 </div>
-<!--/#education -->    
+<!--/#education -->
 </template>
