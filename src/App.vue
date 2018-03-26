@@ -55,87 +55,90 @@
 </template>
 
 <script>
+let viewData = {
+  currentYear: new Date().getFullYear(),
+  navLinks: [
+    {
+      title: "about",
+      desc: "About"
+    },
+    {
+      title: "education",
+      desc: "Education"
+    },
+    {
+      title: "skills",
+      desc: "Skills"
+    },
+    {
+      title: "projects",
+      desc: "Projects"
+    }
+  ],
+  socialLinks: [
+    {
+      title: "outlook",
+      iconPath: "./static/social_icons/outlook.ico",
+      linkUrl: "mailto:weihanli@outlook.com"
+    },
+    {
+      title: "github",
+      iconPath: "./static/social_icons/github.ico",
+      linkUrl: "https://github.com/WeihanLi"
+    },
+    {
+      title: "osChina",
+      iconPath: "./static/social_icons/oschina.ico",
+      linkUrl: "https://gitee.com/weihanli"
+    },
+    {
+      title: "gitbook",
+      iconPath: "./static/social_icons/gitbook.ico",
+      linkUrl: "https://www.gitbook.com/@weihanli"
+    },
+    {
+      title: "cnblogs",
+      iconPath: "./static/social_icons/cnblogs.ico",
+      linkUrl: "https://weihanli.cnblogs.com/"
+    },
+    {
+      title: "jianshu",
+      iconPath: "./static/social_icons/jianshu.ico",
+      linkUrl: "https://www.jianshu.com/u/9ea357af743b"
+    },
+    {
+      title: "weibo",
+      iconPath: "./static/social_icons/weibo.ico",
+      linkUrl: "https://weibo.com/weihanli"
+    }
+  ],
+  item: ""
+};
+function getRouteData() {
+  if (location.hash) {
+    var hashVal = location.hash.substring(2);
+    for (var i = 0; i < viewData.navLinks.length; i++) {
+      if (viewData.navLinks[i].title === hashVal) {
+        return hashVal;
+      }
+    }
+  }
+  return "about";
+}
 export default {
   name: "App",
   data: function() {
-    return {
-      currentYear: new Date().getFullYear(),
-      item: "about",
-      navLinks: [
-        {
-          title: "about",
-          desc: "About"
-        },
-        {
-          title: "education",
-          desc: "Education"
-        },
-        {
-          title: "skills",
-          desc: "Skills"
-        },
-        {
-          title: "projects",
-          desc: "Projects"
-        }
-      ],
-      socialLinks: [
-        {
-          title: "outlook",
-          iconPath: "./static/social_icons/outlook.ico",
-          linkUrl: "mailto:weihanli@outlook.com"
-        },
-        {
-          title: "github",
-          iconPath: "./static/social_icons/github.ico",
-          linkUrl: "https://github.com/WeihanLi"
-        },
-        {
-          title: "osChina",
-          iconPath: "./static/social_icons/oschina.ico",
-          linkUrl: "https://gitee.com/weihanli"
-        },
-        {
-          title: "gitbook",
-          iconPath: "./static/social_icons/gitbook.ico",
-          linkUrl: "https://www.gitbook.com/@weihanli"
-        },
-        {
-          title: "cnblogs",
-          iconPath: "./static/social_icons/cnblogs.ico",
-          linkUrl: "https://weihanli.cnblogs.com/"
-        },
-        {
-          title: "jianshu",
-          iconPath: "./static/social_icons/jianshu.ico",
-          linkUrl: "https://www.jianshu.com/u/9ea357af743b"
-        },
-        {
-          title: "weibo",
-          iconPath: "./static/social_icons/weibo.ico",
-          linkUrl: "https://weibo.com/weihanli"
-        }
-      ]
-    };
+    return viewData;
+  },
+  beforeCreate: function() {
+    viewData.item = getRouteData();
   },
   methods: {
-    getRouteData: function() {
-      if (location.hash) {
-        var hashVal = location.hash.substring(2);
-        var modules = ["about", "education", "projects", "skills"];
-        for (var i = 0; i < modules.length; i++) {
-          if (modules[i] === hashVal) {
-            return hashVal;
-          }
-        }
-      }
-      return "about";
-    },
     setItem: function(item) {
-      this.item = item;
+      viewData.item = item;
     },
-    isSelected: function(item) {
-      return this.item === item;
+    isSelected: function(title) {
+      return this.item === title;
     }
   }
 };
