@@ -109,7 +109,7 @@ let viewData = {
     {
       title: "weibo",
       iconPath: "./static/social_icons/weibo.ico",
-      linkUrl: "https://weibo.com/weihanli"
+      linkUrl: "https://weibo.com/WeihanLee"
     }
   ],
   item: ""
