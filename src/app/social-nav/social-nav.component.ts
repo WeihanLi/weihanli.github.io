@@ -41,7 +41,7 @@ export class SocialNavComponent implements OnInit {
     {
       title: 'weibo',
       iconPath: './images/social_icons/weibo.ico',
-      linkUrl: 'https://weibo.com/weihanli'
+      linkUrl: 'https://weibo.com/WeihanLee'
     }
   ];
 

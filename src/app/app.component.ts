@@ -63,7 +63,7 @@ export class AppComponent {
     {
       title: 'weibo',
       iconPath: '../assets/social_icons/weibo.ico',
-      linkUrl: 'https://weibo.com/weihanli'
+      linkUrl: 'https://weibo.com/WeihanLee'
     }
   ];
 
