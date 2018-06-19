@@ -8,6 +8,8 @@ import { AboutComponent } from './about/about.component';
 import { EducationComponent } from './education/education.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { SkillsComponent } from './skills/skills.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 
 @NgModule({
@@ -21,7 +23,8 @@ import { SkillsComponent } from './skills/skills.component';
   ],
   imports: [
     AppRoutingModule,
-    BrowserModule
+    BrowserModule,
+    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
