@@ -1,0 +1,21 @@
+FROM node
+
+# set working directory
+WORKDIR /app
+
+# install and cache app dependencies
+COPY . /app
+
+RUN yarn
+RUN yarn global add @angular/cli
+RUN yarn run build
+
+FROM nginx
+
+COPY --from=build-stage /app/dist/weihanli /usr/share/nginx/html
+
+# expose port 80
+EXPOSE 80
+
+# run nginx
+CMD ["nginx", "-g", "daemon off;"]
