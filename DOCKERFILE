@@ -1,4 +1,4 @@
-FROM node
+FROM node as builder
 
 # set working directory
 WORKDIR /app
@@ -7,12 +7,11 @@ WORKDIR /app
 COPY . /app
 
 RUN yarn
-RUN yarn global add @angular/cli
 RUN yarn run build
 
 FROM nginx
 
-COPY --from=build-stage /app/dist/weihanli /usr/share/nginx/html
+COPY --from=builder /app/dist/weihanli /usr/share/nginx/html
 
 # expose port 80
 EXPOSE 80
