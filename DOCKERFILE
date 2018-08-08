@@ -6,8 +6,7 @@ WORKDIR /app
 # install and cache app dependencies
 COPY . /app
 
-RUN yarn
-RUN yarn run build
+RUN yarn && yarn run build
 
 FROM nginx
 

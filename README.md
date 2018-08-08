@@ -1,27 +1,29 @@
-# Homepage
+# WeihanLi-homepage
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+WeihanLi's homepage powered by angular.
 
-## Development server
+## Develop
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+run `ng serve` on the shell or command line
 
-## Code scaffolding
+## Docker support
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Build docker image
 
-## Build
+``` bash
+docker build -t weihanli-homepage .
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Run docker image
 
-## Running unit tests
+``` bash
+# specific export 5200
+docker run -p 5200:80 --name weihanli-homepage-demo weihanli-homepage
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# whatever exported port
+docker run -P --name weihanli-homepage-demo weihanli-homepage
+```
 
-## Running end-to-end tests
+## Contact
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Contact me: weihanli@outlook.com
