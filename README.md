@@ -11,17 +11,17 @@ run `ng serve` on the shell or command line
 ### Build docker image
 
 ``` bash
-docker build -t weihanli-homepage .
+docker build -t weihanli/homepage .
 ```
 
 ### Run docker image
 
 ``` bash
 # specific export 5200
-docker run -p 5200:80 --name weihanli-homepage-demo weihanli-homepage
+docker run -d -p 5200:80 --name weihanli-homepage-demo weihanli/homepage
 
 # whatever exported port
-docker run -P --name weihanli-homepage-demo weihanli-homepage
+docker run -d -P --name weihanli-homepage-demo weihanli/homepage
 ```
 
 ## Contact
