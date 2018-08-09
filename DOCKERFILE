@@ -1,5 +1,7 @@
 FROM node as builder
 
+LABEL maintainer="WeihanLi"
+
 # set working directory
 WORKDIR /app
 
