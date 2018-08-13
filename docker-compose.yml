@@ -1,0 +1,6 @@
+version: "3"
+services:
+  web:
+    image: "weihanli/homepage"
+    ports:
+        - "5200:80"
