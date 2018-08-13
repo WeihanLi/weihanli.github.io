@@ -22,6 +22,8 @@ docker run -d -p 5200:80 --name weihanli-homepage-demo weihanli/homepage
 
 # whatever exported port
 docker run -d -P --name weihanli-homepage-demo weihanli/homepage
+
+docker-compose up -d
 ```
 
 ## Contact

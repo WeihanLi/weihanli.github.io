@@ -2,5 +2,6 @@ version: "3"
 services:
   web:
     image: "weihanli/homepage"
+    container_name: "weihanli-homepage-demo"
     ports:
         - "5200:80"
