@@ -3,10 +3,12 @@ FROM node AS builder
 WORKDIR /app
 
 # install and cache app dependencies
-COPY . /app
+COPY package.json .
+RUN yarn
 
-# install dependencies and build the angular app
-RUN yarn && yarn run build
+# build the angular app
+COPY . .
+RUN yarn run build
 
 FROM nginx:stable-alpine
 
