@@ -1,4 +1,4 @@
-FROM node AS builder
+FROM node:alpine AS builder
 # set working directory
 WORKDIR /app
 
@@ -10,7 +10,7 @@ RUN yarn
 COPY . .
 RUN yarn run build
 
-FROM nginx:stable-alpine
+FROM nginx:alpine
 
 # copy from dist to nginx root dir
 COPY --from=builder /app/dist/weihanli /usr/share/nginx/html
