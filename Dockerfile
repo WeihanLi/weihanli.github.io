@@ -14,6 +14,7 @@ FROM nginx:alpine
 
 # copy from dist to nginx root dir
 COPY --from=builder /app/dist/weihanli /usr/share/nginx/html
+COPY ./conf/nginx.default.conf /etc/nginx/conf.d/default.conf
 
 # expose port 80
 EXPOSE 80
