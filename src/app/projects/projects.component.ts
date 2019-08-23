@@ -11,25 +11,25 @@ export class ProjectsComponent implements OnInit {
       projectTitle: 'WeihanLi.Common',
       projectLink: 'https://github.com/WeihanLi/WeihanLi.Common',
       projectDescription:
-        '.NET常用扩展方法，帮助类等，适用于net45及.netstandard2.0'
+        '.NET常用扩展方法，帮助类等，基于net45和.netstandard2.0，基础类库'
     },
     {
       projectTitle: 'WeihanLi.Npoi',
       projectLink: 'https://github.com/WeihanLi/WeihanLi.Npoi',
       projectDescription:
-        'NPOI扩展，适用于net45及.netstandard2.0'
+        'NPOI扩展，更方便的导入导出Excel/csv，基于net45和.netstandard2.0'
     },
     {
       projectTitle: 'WeihanLi.Redis',
       projectLink: 'https://github.com/WeihanLi/WeihanLi.Redis',
       projectDescription:
-        '基于 StackExchange.Redis的Redis扩展，适用于net45及.netstandard2.0'
+        '基于 StackExchange.Redis的Redis扩展，提供一系列基于 redis 的业务组件，适用于net45及.netstandard2.0'
     },
     {
       projectTitle: '活动室预约系统',
       projectLink: 'https://reservation.weihanli.xyz',
       projectDescription:
-        '学校多个活动室，不同时间段的提前预约申请及处理，申请表的打印，通知公告，微信开发'
+        '学校多个活动室，不同时间段的提前预约申请及处理，申请表的打印，通知公告'
     },
     {
       projectTitle: 'SparkTodo',
@@ -52,7 +52,7 @@ export class ProjectsComponent implements OnInit {
     {
       projectTitle: 'AccessControlHelper',
       projectLink: 'https://github.com/WeihanLi/AccessControlHelper',
-      projectDescription: 'ASP.NET MVC 权限控制插件，自定义权限控制策略'
+      projectDescription: 'ASP.NET (Core) MVC 权限控制插件，自定义权限控制策略'
     },
     {
       projectTitle: 'StackExchange.Redis中文文档（翻译）',

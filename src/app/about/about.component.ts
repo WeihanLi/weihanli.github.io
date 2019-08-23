@@ -43,8 +43,15 @@ export class AboutComponent implements OnInit {
     {
       activityTitle: '途虎养车',
       activityDescription:
-        '毕业之后来到上海，面试了两家公司之后选择了途虎养车，主要在研发部门店组做.NET后台开发2017年8月转至架构组做研发，时间从2016年7月至今',
+        '毕业之后来到上海，面试了两家公司之后选择了途虎养车，主要在研发部门店组做.NET后台开发2017年8月转至架构组做研发，时间从2016年7月至今2018年7月',
       activityDate: '2016-06-30'
+    },
+    {
+      activityTitle: '众蚁社区',
+      activityDescription:
+        '在途虎两年之后加入了众蚁，众蚁是一家创业公司，不过技术总监（老板）比较有想法，使用 asp.net core + angular，完全的前后端分离，并且正在从单机应用迁移到微服务\
+        在众蚁做了很多事情，不仅仅是 .net 相关，也有一些 nodejs/python 之类的，也丰富了我的技术栈',
+      activityDate: '2018-08-01'
     }
   ];
 
