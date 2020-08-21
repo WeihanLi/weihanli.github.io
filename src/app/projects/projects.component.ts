@@ -11,19 +11,19 @@ export class ProjectsComponent implements OnInit {
       projectTitle: 'WeihanLi.Common',
       projectLink: 'https://github.com/WeihanLi/WeihanLi.Common',
       projectDescription:
-        '.NET常用扩展方法，帮助类等，基于net45和.netstandard2.0，基础类库'
+        '.NET 常用扩展方法，帮助类等，基础类库'
     },
     {
       projectTitle: 'WeihanLi.Npoi',
       projectLink: 'https://github.com/WeihanLi/WeihanLi.Npoi',
       projectDescription:
-        'NPOI扩展，更方便的导入导出Excel/csv，基于net45和.netstandard2.0'
+        'NPOI 扩展，更方便的导入导出Excel/csv'
     },
     {
       projectTitle: 'WeihanLi.Redis',
       projectLink: 'https://github.com/WeihanLi/WeihanLi.Redis',
       projectDescription:
-        '基于 StackExchange.Redis的Redis扩展，提供一系列基于 redis 的业务组件，适用于net45及.netstandard2.0'
+        '基于 StackExchange.Redis 的Redis扩展，提供一系列基于 redis 的业务组件'
     },
     {
       projectTitle: '活动室预约系统',

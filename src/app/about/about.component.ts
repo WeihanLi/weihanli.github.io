@@ -49,8 +49,8 @@ export class AboutComponent implements OnInit {
     {
       activityTitle: '众蚁社区',
       activityDescription:
-        '在途虎两年之后加入了众蚁，众蚁是一家创业公司，不过技术总监（老板）比较有想法，使用 asp.net core + angular，完全的前后端分离，并且正在从单机应用迁移到微服务\
-        在众蚁做了很多事情，不仅仅是 .net 相关，也有一些 nodejs/python 之类的，也丰富了我的技术栈',
+        '在途虎两年之后加入了众蚁，众蚁是一家创业公司，不过技术总监比较有想法，使用 asp.net core + angular，完全的前后端分离，并且正在从单机应用迁移到微服务\
+        在众蚁做了很多事情，不仅仅是 .net 相关，也有一些 nodejs/python 之类的，搭建了日志，监控，CI/CD 等基础设施，也很大的丰富了我的技术栈',
       activityDate: '2018-08-01'
     }
   ];
