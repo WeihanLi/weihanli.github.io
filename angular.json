@@ -63,20 +63,24 @@
               "vendorChunk": false,
               "buildOptimizer": true,
               "serviceWorker": true
-            }
+            },
+            "development": {}
           },
-          "defaultConfiguration": ""
+          "defaultConfiguration": "production"
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "weihanli:build"
           },
           "configurations": {
             "production": {
               "browserTarget": "weihanli:build:production"
+            },
+            "development": {
+              "browserTarget": "weihanli:build:development"
             }
-          }
+          },
+          "defaultConfiguration": "development"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
@@ -123,14 +127,17 @@
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
-            "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "weihanli:serve"
+            "protractorConfig": "e2e/protractor.conf.js"
           },
           "configurations": {
             "production": {
               "devServerTarget": "weihanli:serve:production"
+            },
+            "development": {
+              "devServerTarget": "weihanli:serve:development"
             }
-          }
+          },
+          "defaultConfiguration": "development"
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
