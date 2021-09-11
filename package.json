@@ -19,12 +19,12 @@
     "@angular/forms": "^9.1.13",
     "@angular/platform-browser": "^9.1.13",
     "@angular/platform-browser-dynamic": "^9.1.13",
-    "@angular/pwa": "^0.803.0",
     "@angular/router": "^9.1.13",
     "@angular/service-worker": "^9.1.13",
     "core-js": "^3.2.1",
     "rxjs": "6.6.7",
-    "zone.js": "~0.10.3"
+    "tslib": "^1.10.0",
+    "zone.js": "~0.10.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.901.15",
@@ -33,8 +33,8 @@
     "@angular/language-service": "^9.1.13",
     "@types/jasmine": "~3.4.0",
     "@types/jasminewd2": "~2.0.3",
-    "@types/node": "~12.7.2",
-    "codelyzer": "~5.1.0",
+    "@types/node": "^12.11.1",
+    "codelyzer": "^5.1.2",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.2.0",
