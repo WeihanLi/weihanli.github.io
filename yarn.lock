@@ -192,12 +192,22 @@
     tslib "^2.0.0"
     yargs "^16.2.0"
 
+"@angular/compiler@9.0.0":
+  version "9.0.0"
+  resolved "https://registry.nlark.com/@angular/compiler/download/@angular/compiler-9.0.0.tgz#87e0bef4c369b6cadae07e3a4295778fc93799d5"
+  integrity sha1-h+C+9MNptsra4H46QpV3j8k3mdU=
+
 "@angular/compiler@^11.2.14":
   version "11.2.14"
   resolved "https://registry.nlark.com/@angular/compiler/download/@angular/compiler-11.2.14.tgz#9d3ea26b4d2d858aab935f69af9e201f53453a0f"
   integrity sha1-nT6ia00thYqrk19pr54gH1NFOg8=
   dependencies:
     tslib "^2.0.0"
+
+"@angular/core@9.0.0":
+  version "9.0.0"
+  resolved "https://registry.nlark.com/@angular/core/download/@angular/core-9.0.0.tgz?cache=0&sync_timestamp=1631123231543&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40angular%2Fcore%2Fdownload%2F%40angular%2Fcore-9.0.0.tgz#227dc53e1ac81824f998c6e76000b7efc522641e"
+  integrity sha1-In3FPhrIGCT5mMbnYAC378UiZB4=
 
 "@angular/core@^11.2.14":
   version "11.2.14"
@@ -1320,9 +1330,10 @@
   version "3.3.12"
   resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-3.3.12.tgz#bf282cb540e9ad7a0a04b742082c073b655eab39"
 
-"@types/jasmine@~3.4.0":
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-3.4.0.tgz#018c56db42400c092aae47de21f710b7f04e4b06"
+"@types/jasmine@~3.6.0":
+  version "3.6.11"
+  resolved "https://registry.nlark.com/@types/jasmine/download/@types/jasmine-3.6.11.tgz#4b1d77aa9dfc757407cb9e277216d8e83553f09d"
+  integrity sha1-Sx13qp38dXQHy54nchbY6DVT8J0=
 
 "@types/jasminewd2@~2.0.3":
   version "2.0.6"
@@ -1733,9 +1744,10 @@ anymatch@~3.1.2:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
 
-app-root-path@^2.2.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/app-root-path/-/app-root-path-2.2.1.tgz#d0df4a682ee408273583d43f6f79e9892624bc9a"
+app-root-path@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.npm.taobao.org/app-root-path/download/app-root-path-3.0.0.tgz#210b6f43873227e18a4b810a032283311555d5ad"
+  integrity sha1-IQtvQ4cyJ+GKS4EKAyKDMRVV1a0=
 
 aproba@^1.0.3, aproba@^1.1.1:
   version "1.2.0"
@@ -2603,20 +2615,25 @@ code-point-at@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
 
-codelyzer@^5.1.2:
-  version "5.2.2"
-  resolved "https://registry.nlark.com/codelyzer/download/codelyzer-5.2.2.tgz#d0530a455784e6bea0b6d7e97166c73c30a5347f"
-  integrity sha1-0FMKRVeE5r6gttfpcWbHPDClNH8=
+codelyzer@^6.0.0:
+  version "6.0.2"
+  resolved "https://registry.nlark.com/codelyzer/download/codelyzer-6.0.2.tgz#25d72eae641e8ff13ffd7d99b27c9c7ad5d7e135"
+  integrity sha1-JdcurmQej/E//X2ZsnycetXX4TU=
   dependencies:
-    app-root-path "^2.2.1"
+    "@angular/compiler" "9.0.0"
+    "@angular/core" "9.0.0"
+    app-root-path "^3.0.0"
     aria-query "^3.0.0"
     axobject-query "2.0.2"
     css-selector-tokenizer "^0.7.1"
     cssauron "^1.4.0"
     damerau-levenshtein "^1.0.4"
+    rxjs "^6.5.3"
     semver-dsl "^1.0.1"
     source-map "^0.5.7"
     sprintf-js "^1.1.2"
+    tslib "^1.10.0"
+    zone.js "~0.10.3"
 
 collection-visit@^1.0.0:
   version "1.0.0"
@@ -4985,10 +5002,10 @@ jasmine-core@~2.8.0:
   version "2.8.0"
   resolved "https://registry.yarnpkg.com/jasmine-core/-/jasmine-core-2.8.0.tgz#bcc979ae1f9fd05701e45e52e65d3a5d63f1a24e"
 
-jasmine-core@~3.5.0:
-  version "3.5.0"
-  resolved "https://registry.nlark.com/jasmine-core/download/jasmine-core-3.5.0.tgz?cache=0&sync_timestamp=1629575455105&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fjasmine-core%2Fdownload%2Fjasmine-core-3.5.0.tgz#132c23e645af96d85c8bca13c8758b18429fc1e4"
-  integrity sha1-Eywj5kWvlthci8oTyHWLGEKfweQ=
+jasmine-core@~3.6.0:
+  version "3.6.0"
+  resolved "https://registry.nlark.com/jasmine-core/download/jasmine-core-3.6.0.tgz?cache=0&sync_timestamp=1629575455105&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fjasmine-core%2Fdownload%2Fjasmine-core-3.6.0.tgz#491f3bb23941799c353ceb7a45b38a950ebc5a20"
+  integrity sha1-SR87sjlBeZw1POt6RbOKlQ68WiA=
 
 jasmine-spec-reporter@~5.0.0:
   version "5.0.2"
@@ -7432,7 +7449,7 @@ rxjs@6.6.3:
   dependencies:
     tslib "^1.9.0"
 
-rxjs@6.6.7, rxjs@^6.6.0:
+rxjs@6.6.7, rxjs@^6.5.3, rxjs@^6.6.0:
   version "6.6.7"
   resolved "https://registry.nlark.com/rxjs/download/rxjs-6.6.7.tgz?cache=0&sync_timestamp=1627507026323&other_urls=https%3A%2F%2Fregistry.nlark.com%2Frxjs%2Fdownload%2Frxjs-6.6.7.tgz#90ac018acabf491bf65044235d5863c4dab804c9"
   integrity sha1-kKwBisq/SRv2UEQjXVhjxNq4BMk=
@@ -9358,7 +9375,7 @@ yocto-queue@^0.1.0:
   resolved "https://registry.nlark.com/yocto-queue/download/yocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"
   integrity sha1-ApTrPe4FAo0x7hpfosVWpqrxChs=
 
-zone.js@~0.10.2:
+zone.js@~0.10.2, zone.js@~0.10.3:
   version "0.10.3"
   resolved "https://registry.nlark.com/zone.js/download/zone.js-0.10.3.tgz#3e5e4da03c607c9dcd92e37dd35687a14a140c16"
   integrity sha1-Pl5NoDxgfJ3NkuN901aHoUoUDBY=
