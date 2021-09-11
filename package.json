@@ -4,11 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod --aot",
+    "build": "ng build --configuration production --aot",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "pwa": "npx ng build --prod && lite-server --baseDir dist/weihanli"
+    "pwa": "npx ng build --configuration production && lite-server --baseDir dist/weihanli"
   },
   "private": true,
   "dependencies": {
