@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { SocialNavComponent } from './social-nav.component';
 
@@ -6,7 +6,7 @@ describe('SocialNavComponent', () => {
   let component: SocialNavComponent;
   let fixture: ComponentFixture<SocialNavComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ SocialNavComponent ]
     })
