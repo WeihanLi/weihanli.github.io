@@ -14,6 +14,6 @@ FROM nginx:alpine
 
 # copy from dist to nginx root dir
 COPY --from=builder /app/dist/weihanli /usr/share/nginx/html
-COPY ./conf/nginx.conf /etc/nginx/conf.d/default.conf
+COPY ./conf/nginx.conf /etc/nginx/nginx.conf
 
 LABEL maintainer="WeihanLi"
