@@ -41,7 +41,7 @@ spec:
             periodSeconds: 30
           livenessProbe:
             httpGet:
-              path: /Health
+              path: /assets/avatar.jpg
               port: 80
             initialDelaySeconds: 30
             periodSeconds: 60
