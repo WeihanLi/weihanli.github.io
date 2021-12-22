@@ -1,19 +1,19 @@
 apiVersion : apps/v1
 kind: Deployment
 metadata:
-  name: "hongkongdefault0-705d"
+  name: "homepage"
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: "hongkongdefault0-705d"
+      app: "homepage"
   template:
     metadata:
       labels:
-        app: "hongkongdefault0-705d"
+        app: "homepage"
     spec:
       containers:
-        - name: "hongkongdefault0-705d"
-          image: "weihanli.azurecr.io/hongkongdefault0"
+        - name: "homepage"
+          image: "weihanli.azurecr.io/weihanli/homepage"
           ports:
           - containerPort: 80
