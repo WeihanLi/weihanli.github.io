@@ -3,17 +3,20 @@ kind: Ingress
 metadata:
   annotations:
     kubernetes.io/ingress.class: nginx
-    cert-manager.io/cluster-issuer: letsencrypt
   name: homepage
+  namespace: default
 spec:
   rules:
-  - host: "home.lemonsharp.top"
+  - host: lemonsharp.top
     http:
       paths:
-      - pathType: Prefix
-        path: "/"
-        backend:
+      - backend:
           service:
             name: homepage
             port:
               number: 80
+        path: /
+        pathType: Prefix
+  tls:
+  - hosts:
+    - lemonsharp.top
