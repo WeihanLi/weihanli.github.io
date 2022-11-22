@@ -25,7 +25,3 @@ docker run -d -P --name weihanli-homepage-demo weihanli/homepage
 
 docker-compose up -d
 ```
-
-## Contact
-
-Contact me: weihanli@outlook.com
