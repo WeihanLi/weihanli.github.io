@@ -6,8 +6,22 @@ metadata:
   name: homepage
   namespace: default
 spec:
+  tls:
+  - hosts:
+    - weihanli.top
+    - www.weihanli.top
   rules:
   - host: weihanli.top
+    http:
+      paths:
+      - backend:
+          service:
+            name: homepage
+            port:
+              number: 80
+        path: /
+        pathType: Prefix
+  - host: www.weihanli.top
     http:
       paths:
       - backend:
