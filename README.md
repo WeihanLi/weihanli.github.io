@@ -1,27 +1,33 @@
-# WeihanLi-homepage
+# Weihan Li — Personal Portfolio
 
-WeihanLi's homepage powered by angular.
+A lightweight, responsive personal portfolio for **Weihan Li**, a .NET software engineer, Microsoft MVP, and open-source contributor.
 
-## Develop
+## Website
 
-run `ng serve` on the shell or command line
+This repository contains a standalone static website implemented entirely in `index.html`, including its CSS and JavaScript.
 
-## Docker support
+- No build step or package installation is required.
+- No framework, external assets, or runtime dependencies are required to serve the page.
+- The page can be hosted directly with GitHub Pages.
 
-### Build docker image
+## Run locally
 
-``` bash
-docker build -t weihanli/homepage .
-```
+Open `index.html` in a browser, or serve the repository root with any static web server.
 
-### Run docker image
+## Deploy with GitHub Pages
 
-``` bash
-# specific export 5200
-docker run -d -p 5200:80 --name weihanli-homepage-demo weihanli/homepage
+1. Open **Settings → Pages** for this repository.
+2. Choose the `main` branch as the publishing source.
+3. Choose `/(root)` as the folder.
+4. Save the settings.
 
-# whatever exported port
-docker run -d -P --name weihanli-homepage-demo weihanli/homepage
+GitHub Pages will publish the portfolio at the URL shown in the Pages settings.
 
-docker-compose up -d
-```
+## Customize
+
+Edit `index.html` to update the profile, featured projects, writing links, contact links, styling, and interactions.
+
+## Repository contents
+
+- `index.html` — complete portfolio website.
+- `README.md` — project overview and deployment instructions.
